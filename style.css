@@ -4,15 +4,32 @@
   box-sizing: border-box;
 }
 
+html {
+  font-size: 62.5%;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
 .container {
   display: grid;
-  grid-template-columns: repeat(16, 1fr);
-  grid-template-rows: repeat(16, 1fr);
-  gap: 5px;
+  grid-template-columns: repeat(16, fit-content(15px));
+  grid-template-rows: repeat(16, fit-content(15px));
+  column-gap: 0px;
+  row-gap: 0px;
+  align-items: center;
+  justify-items: center;
 }
 
 .box {
-  background-color: red;
-  height: 15px;
-  width: 15px;
+  background-color: black;
+  height: 3rem;
+  width: 3rem;
+  /* transition: all 0.05s ease-in; */
+}
+
+.box:hover {
+  background-color: white;
 }
