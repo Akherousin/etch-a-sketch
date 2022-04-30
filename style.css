@@ -8,19 +8,17 @@ html {
   font-size: 62.5%;
 }
 
-main {
-  display: flex;
-  justify-content: center;
-}
-
 .container {
+  width: 90rem;
+  margin: 0 auto;
+
   display: grid;
-  grid-template-columns: repeat(16, fit-content(15px));
-  grid-template-rows: repeat(16, fit-content(15px));
+
   column-gap: 0px;
   row-gap: 0px;
   align-items: center;
   justify-items: center;
+  justify-content: center;
 }
 
 .box {
