@@ -21,13 +21,3 @@ html {
   justify-items: center;
   justify-content: center;
 }
-
-.box {
-  background-color: black;
-
-  /* transition: all 0.05s ease-in; */
-}
-
-.box:hover {
-  background-color: white;
-}
