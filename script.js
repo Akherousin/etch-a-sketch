@@ -9,10 +9,13 @@ function createNewGrid(e) {
 
   const height = +prompt("select the height of the grid");
   const width = +prompt("select the width of the grid");
+  const amountOfBoxes = height * width;
 
-  for (let i = 0; i <= height * width - 1; i++) {
+  for (let i = 0; i < amountOfBoxes; i++) {
     const box = document.createElement("div");
     box.classList.add("box");
+    box.style.height = `${90 / width}rem`;
+    box.style.width = `${90 / width}rem`;
     container.appendChild(box);
   }
 

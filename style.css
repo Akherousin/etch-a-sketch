@@ -10,6 +10,7 @@ html {
 
 .container {
   width: 90rem;
+  height: 90rem;
   margin: 0 auto;
 
   display: grid;
@@ -23,8 +24,7 @@ html {
 
 .box {
   background-color: black;
-  height: 3rem;
-  width: 3rem;
+
   /* transition: all 0.05s ease-in; */
 }
 
